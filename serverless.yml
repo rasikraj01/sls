@@ -51,7 +51,6 @@ functions:
     handler: handler.auth
 
   getUser:
-    name: hi
     handler: handler.getUserResponder
     events:
       - http:
