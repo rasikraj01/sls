@@ -1,4 +1,4 @@
-import * as bcrypt from 'bcryptjs';
+import * as bcrypt from "bcryptjs";
 
 interface HashOptions {
   saltRounds?: number;
@@ -14,7 +14,7 @@ export class Hash {
   }
 
   static async match(rawString: string, hash: string): Promise<boolean> {
-    console.log(rawString, hash);
+    // console.log(rawString, hash);
     return await bcrypt.compare(rawString, hash);
   }
 }
